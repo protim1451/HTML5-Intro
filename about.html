@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="panda">Panda photo</header>
+    <header class="panda">
+        Panda photo
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="first">
             Search Your image here:
@@ -19,11 +30,69 @@
            <a href="https://en.wikipedia.org/wiki/Giant_panda">For more info Click here</a>
         </section>
         <section>
-            <p>Feedback Form:</p><br> <p>Name</p>
+            <p>Feedback Form:</p><br> 
+            <label for="name">Name</label>
             <input type="text" name="name" id="name"> <br>
-            Date: <br><input type="date" name="date" id="date">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
             <label for="comment">Comment</label>
             <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            <!-- <label for="submit"></label> -->
+            <br>
+            <input type="submit" value="Submit">
+        </section>
+        <section>
+            <h2>Storytelling Form</h2>
+            <form action="">
+                <label for="name">Your Name:
+                    <input id="name" type="text" placeholder="Your Name">
+                </label>
+                <label for="email"> Your Email:
+                    <input type="email" placeholder="Your Email">
+                </label>
+                <label for="phone">Phone:
+                    <input type="text" placeholder="Phone">
+                </label>
+                <fieldset>
+                    <!-- <legend>Pick one Item</legend>
+                    <label for="chitoy">
+                        <input type="radio" name="pitha" id="chitoy">Chitoy
+                    </label>
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa">Vapa
+                    </label>
+                    <label for="pati">
+                        <input type="radio" name="pitha" id="pati">Pati
+                    </label>
+                    <label for="cake">
+                        <input type="radio" name="pitha" id="cake">Cake
+                    </label> -->
+                    <label for="story">Tell Your Story</label>
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                <!-- <fieldset>
+                    <legend>Pick one or more items</legend>
+                    <label for="dhonia">
+                        <input type="checkbox" name="vorta" id="dhonia">Dhonia
+                    </label>
+                    <label for="shorisha">
+                        <input type="checkbox" name="vorta" id="shorisha">Shoricha
+                    </label>
+                    <label for="shutki">
+                        <input type="checkbox" name="vorta" id="shutki">Shutki
+                    </label>
+                </fieldset> -->
+                <label for="feedback">Rate Our Site</label>
+                <select name="rates" id="rate">
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+                
+                <input type="reset" value="Reset">
+            </form>
         </section>
     </main>
 </body>
