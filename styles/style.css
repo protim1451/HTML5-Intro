@@ -33,3 +33,13 @@ td, th{
 table{
     border-collapse: collapse;
 }
+.panda{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 30px;
+    padding: 20px;
+}
+.first{
+    border: 2px solid;
+    /* border-width: 404px; */
+}
